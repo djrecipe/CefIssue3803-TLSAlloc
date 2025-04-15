@@ -1,0 +1,25 @@
+﻿{
+    "configurations": [
+        {
+            "name": "Debug",
+            "generator": "Unix Makefiles",
+            "configurationType": "Debug",
+            "buildRoot": "${projectDir}\\out\\build\\${name}",
+            "installRoot": "${projectDir}\\out\\install\\${name}",
+            "cmakeExecutable": "cmake",
+            "cmakeCommandArgs": "",
+            "buildCommandArgs": "-j 19",
+            "ctestCommandArgs": "",
+            "inheritEnvironments": [ "linux_x64" ],
+            "wslPath": "${defaultWSLPath}",
+            "addressSanitizerRuntimeFlags": "detect_leaks=1",
+            "variables": [
+                {
+                    "name": "FETCHCONTENT_BASE_DIR",
+                    "value": "/mnt/c/space/IronPdf.ChromeRenderer/out/build/Debug/_deps",
+                    "type": "PATH"
+                }
+            ]
+        }
+    ]
+}
