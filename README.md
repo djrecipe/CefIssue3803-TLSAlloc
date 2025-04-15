@@ -1,6 +1,10 @@
 # CEF Issue 3803 - "cannot allocate memory in static TLS block"
 Applies for some Linux ARM devices.
 
+## Build Instructions
+1. `cmake -S . -B out/build/Debug`
+2. `cmake --build out/build/Debug --config Debug -- "-j" "19"`
+
 ## CEF
 You can acquire CEF builds from https://cef-builds.spotifycdn.com/index.html
 
