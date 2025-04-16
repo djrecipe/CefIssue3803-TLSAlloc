@@ -13,13 +13,6 @@ add_executable (SimpleConsole
 add_compile_options(-fPIC)
 # Remove any automatically added file prefix
 set_target_properties(SimpleConsole PROPERTIES PREFIX "")
-### Linux
-# Copy files
-add_custom_command(
-	TARGET SimpleConsole POST_BUILD
-	COMMAND ${CMAKE_COMMAND} -E copy_directory
-			${DEPS_FOLDER}
-			${CMAKE_CURRENT_BINARY_DIR})
 # Set link options
 target_link_options(SimpleConsole PRIVATE -static-libgcc -static-libstdc++)
 # Link!
