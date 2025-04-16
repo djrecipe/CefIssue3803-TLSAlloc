@@ -9,9 +9,9 @@ Applies for some Linux ARM devices.
 ### x64
 1. Install Ubuntu 24
 2. Run `sudo apt install -y sudo libxkbcommon-x11-0 libc6 libc6-dev libgtk2.0-0 libnss3 libatk-bridge2.0-0 libx11-xcb1 libxcb-dri3-0 libdrm-common libgbm1 libasound2t64 libxrender1 libfontconfig1 libxshmfence1 libgdiplus libva-dev`
-3. Run `./SimpleConsole` and observe no error
+3. Build and run `./SimpleConsole` and observe no error
 
-### arm64
+### arm64 (via mac)
 1. Run docker container `docker run --rm --detach -ti -platform linux/arm64 ubuntu:latest`
 2. Attach to docker container
 3. Install packages
